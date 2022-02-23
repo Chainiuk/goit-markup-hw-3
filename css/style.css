@@ -106,7 +106,7 @@ p {
 .navigation-buttons-list {
     list-style-type: none;
     margin-top: 0px;
-    margin-bottom: 56px;
+    margin-bottom: 50px;
     padding-left: 0px;
     display: flex;
     justify-content: center;
@@ -120,6 +120,7 @@ p {
 
 
 .navigation-list{
+    display: flex;
     list-style-type: none;
     margin-left: 93px;
     padding-left: 0px;
@@ -169,8 +170,9 @@ p {
 }
 
 .footer-contact-list-element {
-    color: #757575;
-    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.03em;
+    line-height: 1.71;
     margin-top: 9px;
 }
 
@@ -189,7 +191,20 @@ p {
     text-decoration: none;
 }
 
+.footer-contacts {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
 .contacts:hover {
+    color: var(--light-blue);
+}
+
+.footer-contacts:hover {
     color: var(--light-blue);
 }
 
@@ -197,8 +212,11 @@ p {
    color: var(--light-blue);
 }
 
+.footer-contacts:focus {
+    color: var(--light-blue);
+}
+
 .navigation-link {
-    display: inline;
     color: #212121;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -218,6 +236,7 @@ p {
     padding: 6px 22px;
     border-radius: 4px;
     font-family: Roboto;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.625;
     letter-spacing: 0.03em;
@@ -234,6 +253,7 @@ p {
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
+    margin-bottom: 0px;
     padding-left: 0px;
 }
 
@@ -282,6 +302,7 @@ p {
     font-size: 14px;
     line-height: 1.71;
     margin-top: 20px;
+    font-style: normal;
 }
 
 .footer {
@@ -331,6 +352,8 @@ p {
 }
 
 .benefits-list {
+    margin-top: 0px;
+    margin-bottom: 0px;
     list-style-type: none;
     display: flex;
     padding-left: 0px;
@@ -349,6 +372,7 @@ p {
     font-weight: 700;
     font: 14px;
     line-height: 1.17;
+    text-transform: uppercase;
 }
 
 .benefits-description {
@@ -393,6 +417,7 @@ p {
     list-style-type: none;
     display: flex;
     margin-top: 50px;
+    margin-bottom: 0px;
     padding-left: 0px;
     justify-content: center;
 }
@@ -419,7 +444,6 @@ p {
 .employee-image {
     width: 270px;
     height: 260px;
-    margin-bottom: 30px;
 }
 
 .employee-name {
@@ -431,10 +455,17 @@ p {
 }
 
 .employee-position {
+    font-weight: 400;
     color: #757575;
     font-size: 16px;
     line-height: 1.1875;
     align-items: center;
-    margin-bottom: 30px;
 }
 
+.employee-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
