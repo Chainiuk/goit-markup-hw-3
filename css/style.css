@@ -9,6 +9,7 @@
     --black : #000000;
     --grey-gradient : #FFFFFF99;
     --grey-2 : #ECECEC;
+    --main-font : Roboto, sans-serif
 }
 
 h1,
@@ -82,7 +83,7 @@ button {
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: var(--main-font);
     font-size: 14px;
     color: var(--black-text);
     letter-spacing: 0.03em;
