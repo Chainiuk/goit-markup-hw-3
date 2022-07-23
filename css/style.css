@@ -3,7 +3,12 @@
     --black-backround : #2F303A;
     --grey : #757575;
     --portfolio-button-background : #F5F4FA;
-
+    --white : #FFFFFF;
+    --black-text : #212121;
+    --grey-text : #EEEEEE;
+    --black : #000000;
+    --grey-gradient : #FFFFFF99;
+    --grey-2 : #ECECEC;
 }
 
 h1,
@@ -16,12 +21,45 @@ p {
   margin: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 32px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .container {
-    box-sizing: border-box;
     width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
 }
 
 .header-container {
@@ -34,12 +72,6 @@ p {
     flex-direction: column;
 }
 
-.hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -49,18 +81,14 @@ p {
     padding-bottom: 94px;
 }
 
-.body {
-    width: 1600px;
-    height: 80px;
-    font-family: Roboto;
-    font-weight: 500;
+body {
+    font-family: Roboto, sans-serif;
     font-size: 14px;
-    color: #212121;
+    color: var(--black-text);
     letter-spacing: 0.03em;
 }
 
 .header {
-    line-height: 1.17;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -84,7 +112,7 @@ p {
 }
 
 .studio-header {
-    color: #212121  ;
+    color: var(--black-text)  ;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -92,7 +120,7 @@ p {
 }
 
 .studio-footer {
-    color: #FFFFFF  ;
+    color: var(--white)  ;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -100,7 +128,8 @@ p {
 }
 
 .navigation {
-    display: inline;
+    font-weight: 500;
+    margin-left: 93px;
 }
 
 .navigation-buttons-list {
@@ -118,20 +147,15 @@ p {
     margin-left: 8px;
 }
 
-
 .navigation-list{
     display: flex;
     list-style-type: none;
-    margin-left: 93px;
-    padding-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 .navigation-list-element {
     font-size: 14px;
     display: inline;
-    color: #212121;
+    color: var(--black-text);
     letter-spacing: 0.02em;
 }
 
@@ -145,13 +169,7 @@ p {
 }
 
 .contact-list {
-    list-style-type: none;
-    font-size: 14px;
-    display: inline;
-    margin-left: 331px;
-    padding-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-left: auto;
 }
 
 .footer-contact-list {
@@ -163,7 +181,7 @@ p {
 }
 
 .contact-list-element {
-    color: #757575;
+    color: var(--grey);
     display: inline;
     letter-spacing: 0.02em;
     margin-left: 50px;
@@ -186,7 +204,7 @@ p {
 
 .contacts {
     display: inline;
-    color: #757575;
+    color: var(--grey);
     letter-spacing: 0.02em;
     text-decoration: none;
 }
@@ -217,9 +235,8 @@ p {
 }
 
 .navigation-link {
-    color: #212121;
+    color: var(--black-text);
     letter-spacing: 0.02em;
-    text-decoration: none;
 }
 
 .navigation-link:hover {
@@ -230,6 +247,9 @@ p {
     color: var(--light-blue);
 }
 
+.current {
+    color: var(--light-blue);
+}
 
 .navigation-button {
     cursor: pointer;
@@ -243,7 +263,7 @@ p {
 }
 
 .navigation-button:hover {
-    color: #FFFFFF;
+    color: var(--white);
     background-color: var(--light-blue);
 }
 
@@ -265,9 +285,9 @@ p {
 
 .projects-borders {
     border-top: 0px;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid var(--grey-text);
+    border-right: 1px solid var(--grey-text);
+    border-bottom: 1px solid var(--grey-text);
     box-sizing: border-box;
     padding-top: 20px;
     margin-top: -4px;
@@ -290,14 +310,19 @@ p {
     margin-top: 4px;
     margin-left: 24px;
     margin-bottom: 20px;
-    color: #757575;
+    color: var(--grey);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.875;
 }
 
 .adress {
-    color: #FFFFFF;
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.adress-link {
+    color: var(--white);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -312,20 +337,16 @@ p {
 }
 
 .hero {
-    box-sizing: border-box;
-    background-color: #2F303A;
-    width: 1600px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: var(--black-backround);
     padding-top: 200px;
     padding-bottom: 200px;
+    text-align: center;
 }
 
 .hero-text {
+    width: 696px;
     margin: 0 auto;
-    color: #ffffff;
+    color: var(--white);
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
@@ -335,19 +356,19 @@ p {
 }
 
 .hero-button {
-    color: #FFFFFF;
+    color: var(--white);
     background-color: var(--light-blue);
     font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.875;
+    line-height: 1.88;
     cursor: pointer;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.06em;
     margin-top: 30px;
     padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border-color: var(--light-blue);
+    border-style: none;
     align-items: center;
 }
 
@@ -368,23 +389,37 @@ p {
 }
 
 .benefits {
-    color: #212121;
+    color: var(--black-text);
     font-weight: 700;
-    font: 14px;
     line-height: 1.17;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 .benefits-description {
-    color: #757575;
+    color: var(--grey);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     margin-top: 10px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .sections-names {
-    color: #212121;
+    color: var(--black-text);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -410,7 +445,7 @@ p {
 .employee-section {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color:#F5F4FA;
+    background-color:var(--portfolio-button-background);
 }
 
 .employees-list {
@@ -424,12 +459,9 @@ p {
 
 .employee-list-element {
     margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
 }
 
 .employee-list-element:first-child{
@@ -443,11 +475,10 @@ p {
 
 .employee-image {
     width: 270px;
-    height: 260px;
 }
 
 .employee-name {
-    color: #212121;
+    color: var(--black-text);
     font-size: 16px;
     line-height: 1.1875;
     align-items: center;
@@ -456,16 +487,14 @@ p {
 
 .employee-position {
     font-weight: 400;
-    color: #757575;
+    color: var(--grey);
     font-size: 16px;
     line-height: 1.1875;
     align-items: center;
 }
 
 .employee-description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
 }
